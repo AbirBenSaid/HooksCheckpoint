@@ -1,7 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
 import MyNavbar from './Components/Navbar/Nav'
-//import Contacts from './Components/Contact/Contacts'
 import MovieList from './Components/MovieList/MovieList'
 import Add from './Components/Add/Add';
 
@@ -150,7 +149,7 @@ const getTitleSearch = (inputtitle)=> {setTitleSearch (inputtitle)}
     <MyNavbar getRateSearch={getRateSearch} getTitleSearch={getTitleSearch} />
     <div className="addMovieButton"> <Add getNewMovie={getNewMovie} /> </div>
     <MovieList myMovies={movies} rateSearch={rateSearch} titleSearch={titleSearch} />
- {/* //   <Contacts/> */}
+
     </>
   )
 }
