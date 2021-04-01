@@ -11,9 +11,10 @@ function MovieCard({movie}) {
           <Card.Title className="Title">{movie.title}</Card.Title>
           <Card.Text>
           {movie.description}
+        {"⭐️".repeat(movie.rate)}
           </Card.Text>
           
-          <Button variant="primary">{"⭐️".repeat(movie.rate)}</Button>
+          <Button variant="primary">More</Button>
         </Card.Body>
       </Card> 
         </div>
